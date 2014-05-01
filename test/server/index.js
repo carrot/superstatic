@@ -68,7 +68,6 @@ describe('Superstatic server', function() {
         
         server.start(function () {
           expect(server._debug).to.equal(false);
-          expect(server.logger().toString()).to.equal(Server.middlewareNoop.toString());
           server.stop(done);
         });
       });
